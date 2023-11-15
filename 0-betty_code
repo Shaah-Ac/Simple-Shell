@@ -1,0 +1,22 @@
+#include <stdio.h>
+
+int main() 
+{
+	//Declare variable input
+	int n;
+	printf("Enter a number: ");
+	scanf("%d", &n);
+	if (n < 0) 
+	{
+ 		printf("The input must be a positive number.\n");
+		exit(1);
+	}
+	// Print the factorial of the input.
+	int factorial = 1;
+	for (int i = 1; i <= n; i++) 
+	{
+		factorial *= i;
+	}
+	printf("The factorial of %d is %d.\n", n, factorial);
+	 return 0;
+}
